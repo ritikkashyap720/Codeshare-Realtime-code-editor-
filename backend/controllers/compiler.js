@@ -1,6 +1,3 @@
-var compiler = require('codelly');
-var options = { stats: true }; //prints stats to console
-compiler.init(options);
 const fs = require('fs');
 const { generateFile } = require("./codes/generateFile");
 const Job = require('../model/job');
@@ -13,30 +10,7 @@ const { executeCpp } = require('../executeFiles/executeCpp');
 async function handleCompilation(req, res) {
     const { language, code } = req.body;
     const input = req.body?.input
-
-    function deleteTempFiles() {
-        try {
-            function removeTempFiles() {
-                var path = "./temp/"
-                fs.readdir(path, function (err, files) {
-                    if (!err) {
-                        for (let i = 0; i < files.length; i++) {
-                            fs.rm(path + files[i], { recursive: true }, err => {
-                                if (err) {
-                                    console.log("err", err)
-                                } else {
-                                    console.log("folder deleted succesfully")
-                                }
-                            })
-                        }
-                    }
-                })
-            }
-            removeTempFiles()
-        } catch (error) {
-            console.log("hello" + error)
-        }
-    }
+    
     function deleteFiles(filepath) {
         fs.rm(filepath, { recursive: true }, err => {
             if (err) {
