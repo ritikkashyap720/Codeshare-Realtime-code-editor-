@@ -38,7 +38,7 @@ Welcome to our collaborative coding platform project! This platform aims to revo
 ## How compilation works
 
 - First code is sent to server, then server generate a file and register a job id with staus pending and this job id is passed to client.
-- Then the generated file is compiled if the have an error the status of job id is updated with error and output std error and sent back to the client.
+- Then the generated file is compiled if the have an error the status of job id is updated with error and output std is updated on database if no error then output is updated with status success in the database .
 - And on client side after recieving the job id the client will start making polling request on the /status with job id at an interval of 1000ms.
 - And if the status change with success or error the polling request is stopped and the output is display on the editor.
 
