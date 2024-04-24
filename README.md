@@ -88,7 +88,7 @@ Run front-end
   npm run dev
 ```
 
-Run backend-end
+Run backend
 ```bash
   cd backend
   npm install
