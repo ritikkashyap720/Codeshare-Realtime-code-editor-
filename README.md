@@ -44,7 +44,7 @@ Welcome to our collaborative coding platform project! This platform aims to revo
 
   ![Compilation flow diagram](https://github.com/ritikkashyap720/Codeshare-Realtime-code-editor-/assets/72151729/b5c44cb1-958b-4f8d-9b38-25d222ee1101)
 
-## UI/UX of code share
+## UI UX of code share
 - Login
   ![login](https://github.com/ritikkashyap720/Codeshare-Realtime-code-editor-/assets/72151729/8fe64524-73d3-4381-a228-7561113883ab)
 - Regsiter  
