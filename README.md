@@ -22,10 +22,10 @@ Welcome to our collaborative coding platform project! This platform aims to revo
 - LinkedIn: [Ritik Kashyap](https://www.linkedin.com/in/ritik-kashyap-24812a1b9/)
 
 ## Naviagte
--key Feaatures
--How compilation works
--UI/UX of code share
--Demo vides
+- [key Feaatures](/Key Features)
+- How compilation works
+- UI/UX of code share
+- Demo vides
 
 ## Key Features 🚀
 
