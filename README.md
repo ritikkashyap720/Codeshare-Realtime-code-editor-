@@ -9,7 +9,7 @@ Welcome to our collaborative coding platform project! This platform aims to revo
 - Support for front-end code with download feature
 - Code compilation in Python, C++, and Java
 
-## Tech Stacks 💻
+## Tech Stack 💻
 
 - Frontend: React, JSX, CSS
 - Backend: Express, MongoDB
