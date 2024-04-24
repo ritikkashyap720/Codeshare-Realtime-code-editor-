@@ -22,12 +22,13 @@ Welcome to our collaborative coding platform project! This platform aims to revo
 - LinkedIn: [Ritik Kashyap](https://www.linkedin.com/in/ritik-kashyap-24812a1b9/)
 
 ## Naviagte
-- [key Feaatures](/Key Features)
-- How compilation works
-- UI/UX of code share
-- Demo vides
+- [Key features](#key-features)
+- [How compilation works](#how-compilation-works)
+- [UI/UX of code share](#ui-ux-of-code-share)
+- [Demo videos](#demo-videos)
+- [Run Locally](#run-localy)
 
-## Key Features 🚀
+## Key Features
 
 - Real-time collaboration: Users can see each other's code changes in real-time, fostering teamwork and knowledge sharing.
 - Room creation: Users can create rooms and share unique IDs to invite others, ensuring privacy and exclusivity.
@@ -57,13 +58,43 @@ Welcome to our collaborative coding platform project! This platform aims to revo
   ![web demo](https://github.com/ritikkashyap720/Codeshare-Realtime-code-editor-/assets/72151729/d876f282-0fe7-469f-958d-4572f7dba850)
 
 
-## Demo Videos 🌟
+## Demo Videos 
 
 https://github.com/ritikkashyap720/Codeshare-Realtime-code-editor-/assets/72151729/ccdd0047-1da2-4396-8ee0-a4f753f3c695
 
 ## Front end demo
 
 https://github.com/ritikkashyap720/Codeshare-Realtime-code-editor-/assets/72151729/bb34fb4f-77c4-4ba1-a7c2-faa9c03798f6
+
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/ritikkashyap720/Codeshare-Realtime-code-editor-
+```
+
+Go to the project directory
+
+```bash
+  cd my-project
+```
+
+Run front-end
+```bash
+  cd front
+  npm install
+  npm run dev
+```
+
+Run backend-end
+```bash
+  cd backend
+  npm install
+  npm start
+```
+
 
 
 
