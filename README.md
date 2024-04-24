@@ -26,7 +26,7 @@ Welcome to our collaborative coding platform project! This platform aims to revo
 - [How compilation works](#how-compilation-works)
 - [UI/UX of code share](#ui-ux-of-code-share)
 - [Demo videos](#demo-videos)
-- [Run Locally](#run-localy)
+- [Run Locally](#run-locally)
 
 ## Key Features
 
