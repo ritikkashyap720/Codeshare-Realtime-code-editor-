@@ -42,7 +42,9 @@ Welcome to our collaborative coding platform project! This platform aims to revo
 - And on client side after recieving the job id the client will start making polling request on the /status with job id at an interval of 1000ms.
 - And if the status change with success or error the polling request is stopped and the output is display on the editor.
 
-  ![Compilation flow diagram](https://github.com/ritikkashyap720/Codeshare-Realtime-code-editor-/assets/72151729/b5c44cb1-958b-4f8d-9b38-25d222ee1101)
+-Codeshare - Architecture
+ ![codeshare-architecture](https://github.com/user-attachments/assets/b1a586c4-afa0-4ba9-af70-b630065f64d4)
+
 
 ## UI UX of code share
 - Login
