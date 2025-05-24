@@ -4,16 +4,18 @@ const app = express();
 const http = require('http');
 const { Server } = require("socket.io");
 const cors = require('cors');
-const PORT = 8000;
+const PORT = process.env.PORT||8000;
 const server = http.createServer(app);
 const connectDB = require("./connection/connection");
 const user = require("./routes/user");
 const Actions = require("./Action")
 const { checkAuth } = require("./middleware/auth");
 app.use(cors());
+require('dotenv').config()
+const MONGO_URL = process.env.MONGO_URL
 
 // db connect
-connectDB("mongodb+srv://ritikkashyap7404:9992410046@urlshorterner.aawdtnl.mongodb.net/compiler").then(console.log("Database connected")).catch((err) => { console.log("Error:", err) })
+connectDB(MONGO_URL).then(console.log("Database connected")).catch((err) => { console.log("Error:", err) })
 
 const io = new Server(server, {
   cors: { origin: "http://localhost:5173", methods: ["GET", "POST"] },

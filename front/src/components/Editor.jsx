@@ -355,7 +355,7 @@ function Editor({ socketRef, roomId, onInputChange, onOutputChange }) {
           <button className="leftBtns share" onClick={handleShare}>Share</button>
           {front && <button className="leftBtns execute" onClick={handleFrontCodeDownload}>Download code</button>}
           {/* {loader ? <button className="leftBtns execute">Executing...</button> : !front && <button className="leftBtns execute" onClick={handleCodeCompilation}>Execute</button>} */}
-          {loader ? <button className="leftBtns execute">Executing...</button> : !front && <button className="leftBtns execute" >Execute(coming soon..)</button>}
+          {loader ? <button className="leftBtns execute">Executing...</button> : !front && <button className="leftBtns execute" >Execute(soon..)</button>}
           <button className='select' onClick={showDropDown}>{language} <ArrowDropDownRoundedIcon /></button>
           {dropdown && <div className="dropdown">
             <button onClick={handleSelectLanguage} className="dropdowns" value="python" >Python</button>
