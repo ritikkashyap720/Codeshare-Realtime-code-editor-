@@ -220,17 +220,17 @@ function Editor({ socketRef, roomId, onInputChange, onOutputChange }) {
                 setOutput("TLE(Time Limited Exection)")
               } else {
                 setOutput(JSON.parse(codeResult.output).stderr)
-                 console.log(JSON.parse(codeResult.output))
+                console.log(JSON.parse(codeResult.output))
               }
               clearInterval(pollInterval)
             }
             else {
-              setTimeout(()=>{
+              setTimeout(() => {
                 setLoader(false)
                 setStatus("rejected")
                 clearTimeout(pollInterval)
                 console.log("interval cleared!")
-              },5000)
+              }, 5000)
             }
           }, 1000)
 
@@ -354,7 +354,8 @@ function Editor({ socketRef, roomId, onInputChange, onOutputChange }) {
         <div className="leftbuttons">
           <button className="leftBtns share" onClick={handleShare}>Share</button>
           {front && <button className="leftBtns execute" onClick={handleFrontCodeDownload}>Download code</button>}
-          {loader ? <button className="leftBtns execute">Executing...</button> : !front && <button className="leftBtns execute" onClick={handleCodeCompilation}>Execute</button>}
+          {/* {loader ? <button className="leftBtns execute">Executing...</button> : !front && <button className="leftBtns execute" onClick={handleCodeCompilation}>Execute</button>} */}
+          {loader ? <button className="leftBtns execute">Executing...</button> : !front && <button className="leftBtns execute" >Execute(coming soon..)</button>}
           <button className='select' onClick={showDropDown}>{language} <ArrowDropDownRoundedIcon /></button>
           {dropdown && <div className="dropdown">
             <button onClick={handleSelectLanguage} className="dropdowns" value="python" >Python</button>

@@ -13,7 +13,7 @@ const { checkAuth } = require("./middleware/auth");
 app.use(cors());
 
 // db connect
-connectDB("mongodb://localhost:27017/compiler").then(console.log("Database connected")).catch((err) => { console.log("Error:", err) })
+connectDB("mongodb+srv://ritikkashyap7404:9992410046@urlshorterner.aawdtnl.mongodb.net/compiler").then(console.log("Database connected")).catch((err) => { console.log("Error:", err) })
 
 const io = new Server(server, {
   cors: { origin: "http://localhost:5173", methods: ["GET", "POST"] },
