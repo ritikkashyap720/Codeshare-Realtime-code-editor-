@@ -22,7 +22,7 @@ export default function Login() {
 
             if (token != null && username != null && id != null) {
                 try {
-                    const response = await fetch('http://localhost:8000/auth', {
+                    const response = await fetch('https://codeshare-backend-51du.onrender.com/auth', {
                         headers: {
                             'Authorization': `Bearer ${token}`
                         }
@@ -52,7 +52,7 @@ export default function Login() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const response = await fetch('http://localhost:8000/user/login', {
+        const response = await fetch('https://codeshare-backend-51du.onrender.com/user/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded'

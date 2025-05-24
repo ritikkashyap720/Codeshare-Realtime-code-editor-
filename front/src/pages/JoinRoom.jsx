@@ -25,7 +25,7 @@ function JoinRoom() {
 
             if (token != null && username != null && id != null) {
                 try {
-                    const response = await fetch('http://localhost:8000/auth', {
+                    const response = await fetch('https://codeshare-backend-51du.onrender.com/auth', {
                         headers: {
                             'Authorization': `Bearer ${token}`
                         }

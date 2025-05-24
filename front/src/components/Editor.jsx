@@ -183,7 +183,7 @@ function Editor({ socketRef, roomId, onInputChange, onOutputChange }) {
       setLoader(true);
       setOutput("")
       setExecutionTime("")
-      const response = await fetch('http://localhost:8000/compile/', {
+      const response = await fetch('https://codeshare-backend-51du.onrender.com/compile/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded'
@@ -203,7 +203,7 @@ function Editor({ socketRef, roomId, onInputChange, onOutputChange }) {
         if (result.jobId) {
           var pollInterval;
           pollInterval = setInterval(async () => {
-            const response = await fetch(`http://localhost:8000/compile/status/${result.jobId}`)
+            const response = await fetch(`https://codeshare-backend-51du.onrender.com/compile/status/${result.jobId}`)
             const codeResult = await response.json()
             console.log(codeResult.status)
             console.log("Interval running")
@@ -319,7 +319,7 @@ function Editor({ socketRef, roomId, onInputChange, onOutputChange }) {
 
 
   const handleFrontCodeDownload = async () => {
-    const response = await fetch('http://localhost:8000/compile/download', {
+    const response = await fetch('https://codeshare-backend-51du.onrender.com/compile/download', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded'

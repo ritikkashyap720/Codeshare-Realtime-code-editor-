@@ -22,7 +22,7 @@ function Signin() {
             const token = localStorage.getItem("token")
             if (token) {
                 try {
-                    const response = await fetch('http://localhost:8000/auth', {
+                    const response = await fetch('https://codeshare-backend-51du.onrender.com/auth', {
                         headers: {
                             'Authorization': `Bearer ${token}`
                         }
@@ -54,7 +54,7 @@ function Signin() {
         e.preventDefault();
 
         console.log(formData);
-        const response = await fetch('http://localhost:8000/user/signin', {
+        const response = await fetch('https://codeshare-backend-51du.onrender.com/user/signin', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded'
